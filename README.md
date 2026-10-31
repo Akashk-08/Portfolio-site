@@ -3,6 +3,8 @@
 My personal portfolio, built with **Next.js 16**, **React 19**, **TypeScript** and **Framer Motion**.
 Dark theme by default, with a light theme one click away.
 
+Live at **https://akaskulkarni-portfolio.vercel.app**
+
 ## Run it on your computer
 
 You need Node.js 20 or newer. Check with `node -v`.
@@ -43,9 +45,9 @@ Technology logos come from the `simple-icons` package. To add one, import it at 
 
 House style for all text on the site: no hyphens and no dashes. Write "full stack", "real time", "2022 to 2024".
 
-## Before going live
+## Before each release
 
-1. Copy `.env.example` to `.env.local` and set `NEXT_PUBLIC_SITE_URL` to the real address.
+1. The public address is set in `lib/site.ts`. To use a custom domain, set `NEXT_PUBLIC_SITE_URL` in your hosting settings and redeploy.
 2. Run `npm run build` and fix anything it reports.
 3. Run `npm audit --omit=dev` and make sure it says 0 vulnerabilities.
 
