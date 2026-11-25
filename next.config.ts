@@ -29,8 +29,13 @@ const nextConfig: NextConfig = {
     return [
       { source: "/(.*)", headers: securityHeaders },
       {
-        source: "/:all*(jpg|png|svg|ico|woff2|pdf)",
+        source: "/:all*(jpg|png|svg|ico|woff2)",
         headers: [{ key: "Cache-Control", value: "public, max-age=2592000, stale-while-revalidate=86400" }],
+      },
+      {
+        // The resume changes often, so browsers must re-check it instead of keeping it for 30 days.
+        source: "/resume/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=0, must-revalidate" }],
       },
     ];
   },
