@@ -7,4 +7,4 @@ export const EMAIL = "akashkulkarni530@gmail.com";
 export const GITHUB = "https://github.com/Akashk-08";
 export const LINKEDIN = "https://www.linkedin.com/in/akash-kulkarni-aa371b182/";
 // Bump the ?v= number whenever the PDF changes, so browsers fetch the new file instead of a cached copy.
-export const RESUME = "/resume/Akash_Kulkarni_Resume.pdf?v=2";
+export const RESUME = "/resume/Akash_Kulkarni_Resume.pdf?v=3";
